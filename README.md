@@ -3,7 +3,14 @@
 # Infrastructure as Code (IaC) for Docker Bench Security Compliance
 
 ## Description
-This project aims to develop Infrastructure as Code (IaC) using Terraform to build an Amazon Machine Image (AMI) that complies with the Docker Bench Security checks. The Docker Bench Security checks ensure the security of Docker containers and environments.
+This project aims to develop Infrastructure as Code (IaC) using Terraform to build an Amazon Machine Image (AMI) that complies with the Docker Bench Security checks. The Docker Bench Security checks ensure the security of following components in the infrastructure.
+1. Host Configuration
+2. Docker Daemon Configuration
+3. Docker Daemon Configuration Files
+4. Container Images and Build File
+5. Container Runtime
+6. Docker Security Operations
+
 
 For container images and build files, the project uses the Echo-Server project available at [Echo-Server-Raushan](https://github.com/kraushan1997/Echo-Server-Raushan.git). The provided Dockerfile has been updated and utilized for building images and running containers.
 
@@ -12,7 +19,7 @@ For container images and build files, the project uses the Echo-Server project a
 
 ## Pre-requisites
 - Install and configure Terraform
-- Install and configure AWS CLI
+- Install and configure AWS CLI. We'll need to create Access key and secret key and use in aws configure.In terraform code i'm using aws ec2 commmand so it's needed.
 - Create a .pem key and reference it in the Terraform file while creating the EC2 instance.
 
 ## Actions
