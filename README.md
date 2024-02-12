@@ -75,3 +75,5 @@ For container images and build files, the project uses the Echo-Server project a
 ## Note
 - With this Terraform code, a basic infrastructure is deployed to run an EC2 instance connected to the internet.
 - While attempting to resolve all errors from the Docker Bench Security checks, check 2.12 required a custom authorization plugin. The default "authz" plugin was causing errors.
+- For check 2.9 i'm providing  "userns-remap": "default" still it didn't work. i tried with ubuntu user too.
+- For check 2.2 when i set "icc": false , docker is unable to restart and was causing others to fail.
