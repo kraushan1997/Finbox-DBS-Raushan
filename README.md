@@ -10,7 +10,7 @@ This project aims to develop Infrastructure as Code (IaC) using Terraform to bui
 4. Container Images and Build File
 5. Container Runtime
 6. Docker Security Operations
-
+7. Docker Swarm Configuration
 
 For container images and build files, the project uses the Echo-Server project available at [Echo-Server-Raushan](https://github.com/kraushan1997/Echo-Server-Raushan.git). The provided Dockerfile has been updated and utilized for building images and running containers.
 
@@ -28,6 +28,7 @@ For container images and build files, the project uses the Echo-Server project a
     git clone https://github.com/kraushan1997/Finbox-DBS-Raushan.git
     cd Finbox-DBS-Raushan
     ```
+    note: Update access_key, secret_key and key_name under aws_instance. 
 
 2. Initialize Terraform:
     ```bash
