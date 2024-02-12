@@ -12,15 +12,16 @@ This project aims to develop Infrastructure as Code (IaC) using Terraform to bui
 6. Docker Security Operations
 7. Docker Swarm Configuration
 
-For container images and build files, the project uses the Echo-Server project available at [Echo-Server-Raushan](https://github.com/kraushan1997/Echo-Server-Raushan.git). The provided Dockerfile has been updated and utilized for building images and running containers.
+For container images and build files, I am Using project Echo-Server project available at [Echo-Server-Raushan](https://github.com/kraushan1997/Echo-Server-Raushan.git). i forked the original project and updated Dockerfile in my replica. 
 
 ### AMI
 - AMI: ami-085925f297f89fce1
+- OS - Ubuntu
 
 ## Pre-requisites
 - Install and configure Terraform
 - Install and configure AWS CLI. We'll need to create Access key and secret key and use in aws configure.In terraform code i'm using aws ec2 commmand so it's needed.
-- Create a .pem key and reference it in the Terraform file while creating the EC2 instance.
+- Create a .pem key file and reference it in the Terraform file while creating the EC2 instance.
 
 ## Actions
 1. Clone the repository:
